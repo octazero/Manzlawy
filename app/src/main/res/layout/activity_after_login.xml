@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.admin.manzlawy.afterLogin"
+>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.example.admin.manzlawy.HomePage"
+            android:orientation="vertical"
+            android:background="#ffffff">
+        <Switch
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seif Yasser"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#ffffff"
+                android:background="#a70919"
+                android:id="@+id/logo"
+                android:gravity="center"/>
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:text="Search for your food !"
+                android:textSize="25dp"
+                android:id="@+id/aklbeeti"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="70dp"/>
+        <Spinner
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/mo7afzat"
+                android:layout_below="@+id/aklbeeti"
+                android:entries="@array/country_arrays"
+                android:prompt="@string/country_prompt"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"
+                android:background="#d2ced1">
+        </Spinner>
+        <Spinner
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:id="@+id/amaken"
+                android:layout_below="@+id/mo7afzat"
+                android:entries="@array/country_places"
+                android:prompt="@string/country_prompt"
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:background="#d2ced1">
+        </Spinner>
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amaken"
+                android:id="@+id/searchForFood"
+                android:layout_marginTop="30dp"
+                android:text="Search"
+                android:fontFamily="sans-serif"
+                android:background="#a70919"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

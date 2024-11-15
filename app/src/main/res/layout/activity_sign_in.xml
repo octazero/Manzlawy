@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.admin.manzlawy.HomePage"
+        android:orientation="vertical"
+        android:background="#fff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:text="Sign In"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#fff"
+                android:background="#a70919"
+                android:id="@+id/logo"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/food"
+                android:layout_alignBottom="@+id/username"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="15dp"
+                android:layout_alignParentTop="true" />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/username"
+                android:hint="Username"
+                android:layout_marginTop="350dp"
+                android:layout_centerHorizontal="true"
+                />
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:id="@+id/password"
+                android:hint="Password"
+                android:layout_marginTop="10dp"
+                android:layout_centerInParent="true"/>
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/password"
+                android:id="@+id/signins"
+                android:layout_marginTop="30dp"
+                android:text="Sign In"
+                android:fontFamily="sans-serif"
+                android:background="#a70919"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

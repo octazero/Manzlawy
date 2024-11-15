@@ -1,0 +1,48 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.admin.manzlawy.EditProfile">
+    <RelativeLayout
+            android:layout_width="match_parent" android:layout_height="match_parent" android:background="#fff" android:orientation="vertical" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:typeface="serif"
+                android:text="Manzlawy"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#fff" android:background="#a70919" android:id="@+id/logo" android:gravity="center"/>
+        <ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="150dp" android:src="@drawable/android" android:layout_marginTop="75dp" android:gravity="center"/>
+        <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/NameEdit"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        <EditText
+                android:layout_width="300dp" android:layout_height="wrap_content" android:textSize="25dp" android:layout_below="@+id/NameEdit" android:layout_marginLeft="30dp" android:layout_marginBottom="10dp" android:id="@+id/AgeEdit" android:textStyle="bold" android:textColor="#000000"/>
+        <EditText
+                android:layout_width="300dp" android:layout_height="wrap_content" android:textSize="25dp" android:layout_marginLeft="30dp" android:layout_below="@+id/AgeEdit" android:id="@+id/AddressEdit" android:textStyle="bold" android:textColor="#000000"/>
+        <Button
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/Done"
+                android:text="Done"
+                android:fontFamily="sans-serif"
+                android:background="#a70919"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/AddressEdit"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

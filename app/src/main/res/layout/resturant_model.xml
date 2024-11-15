@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp" app:srcCompat="@drawable/food"
+            android:id="@+id/imageView3"
+    />
+    <TextView
+            android:text="Rating is 5.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true" android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4" android:layout_marginTop="11dp"/>
+    <TextView
+
+            android:text="TextView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_alignBottom="@+id/imageView3" android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3" android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"/>
+</RelativeLayout>
